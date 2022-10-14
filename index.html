@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./class.js"></script>
+    <script defer src="./app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <br>
+        <hr>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" max="100" value="18">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gender">
+        </div>
+        <br>
+        <div>
+            <label for="male">Male:</label>
+            <input type="radio" id="male" name="gender">
+        </div>
+        <hr>
+        <div>
+            <label for="js">JAVASCRIPT:</label>
+            <input type="checkbox" name="js" value="js" id="js">
+            <label for="css">CSS:</label>
+            <input type="checkbox" name="css" value="css"  id="css">
+            <label for="html">HTML:</label>
+            <input type="checkbox" name="html" value="html" id="html">
+        </div>
+        <hr>
+        <div>
+            <label for="city">City:</label>
+            <select name="city" id="city">
+                <option value="ankara">ANKARA</option>
+                <option value="istanbul">ISTANBUL</option>
+                <option value="antep">ANTEP</option>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <label for="favorites">Favorites:</label>
+            <select name="favorites" id="favorites" size="5" multiple>
+                <option value="game">Game</option>
+                <option value="walk">Walking</option>
+                <option value="listen">Listening</option>
+                <option value="play">Playing</option>
+                <option value="sleep">Sleeping</option>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <input type="submit" value="Submit Me" id="submitBtn">
+            <input type="reset" value="Reset Me" id="resetBtn">
+        </div>
+        <hr>
+        <br>
+    </form>
+    
+</body>
+</html>
