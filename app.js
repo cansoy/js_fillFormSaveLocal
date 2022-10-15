@@ -7,7 +7,11 @@ const female=document.querySelector('#female')
 const langues=document.querySelectorAll('input[type=checkbox]')
 const city=document.querySelector('#city')
 const favorites=document.querySelector('#favorites')
+const datetimeLocal=document.querySelector('#datelocal')
+const datetimeNormal=document.querySelector('#datenormal')
+const date=document.querySelector('#date')
 const submitBtn=document.querySelector('#submitBtn')
+
 
 const fillFormClass=(e)=>{
     e.preventDefault()
@@ -38,6 +42,9 @@ const fillFormClass=(e)=>{
             frmFavorites.push(favorites.options[i].value) 
         }
     }
+    const frmdatetimeLocal=datetimeLocal.value
+    const frmdatetimeNormal=datetimeNormal.value
+    const frmDate=date.value
     const myclass=new MyClass(
         frmName,
         frmSurname,
@@ -46,7 +53,10 @@ const fillFormClass=(e)=>{
         gender(),
         frmLanguages,
         fmrCity,
-        frmFavorites
+        frmFavorites,
+        frmdatetimeLocal,
+        frmdatetimeNormal,
+        frmDate
     )
     console.log(myclass)
     localStorage.setItem(myclass.registerID,JSON.stringify(myclass))
